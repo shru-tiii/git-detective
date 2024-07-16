@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b24f61bacb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head-container">
+            <h2 class="heading">DevDetective</h2>
+            <div onclick="changemode()" class="mode">
+                <p class="modename" style="padding-right: 0.5rem;">Dark</p><i class="fa-solid fa-moon micon"></i>
+            </div>
+        </div>
+        <div class="form-container container">
+            <div class="input">
+                <i class="fa-solid fa-magnifying-glass mglass"></i>
+                <input type="text" onkeypress="searchuser(event)" class="searchfield" placeholder="Enter a GitHub username...">
+            </div>
+            <button class="button-7" onclick="searchusername()">Search</button>
+        </div>
+        <div class="user-container container">
+            <img class="photo" src=""></img>
+            <div class="user-info">
+                <div class="userhead">
+                    <div class="user-name">
+                        <div class="name">hello</div>
+                        <div class="joined">hi</div>
+                    </div>
+                    <a class="user-link" target="_blank" href="">@blabla</a>
+                </div>
+                <div class="user-bio"></div>
+                <div class="user-deets">
+                    <div class="repos">
+                        <p class="deet">Repos</p>
+                        <div class="repos-no num"></div>
+                    </div>
+                    <div class="followers">
+                        <p class="deet">Followers</p>
+                        <div class="followers-no num"></div>
+                    </div>
+                    <div class="following">
+                        <p class="deet">Following</p>
+                        <div class="following-no num"></div>
+                    </div>
+                </div>
+                <div class="bottom-deets">
+                    <div class="location x">
+                        <i class="fa-solid fa-location-dot icon l col"></i>
+                        <div class="p loc col">Not Available</div>
+                    </div>
+                    <div class="twitter x">
+                        <i class="fa-brands fa-twitter icon t col"></i>
+                        <div class="p tweet col">Not Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
